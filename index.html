@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "custom-dark-blue": "#173966",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- custom style  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="underline-animation.css" />
+    <style>
+      #categories {
+        width: 14.5%;
+      }
+      #opinions {
+        width: 13%;
+      }
+      @media (min-width: 768px) {
+        #categories {
+          width: 41%;
+        }
+        #opinions {
+          width: 36%;
+        }
+      }
+    </style>
+    <style>
+      .custom-shape-divider-bottom-1679627617 {
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Start header + -->
+    <nav class="h-14 py-10 z-50 flex justify-around items-center bg-indigo-50">
+      <div>
+        <img src="./assets/univers-plaid-logo.svg" alt="" class="w-28 h-28" />
+      </div>
+      <div>
+        <ul class="capitalize flex gap-10 text-sm">
+          <li>
+            <a href="" class="hover-underline-animation">
+              NOS PLAIDS <i class="fa-thin fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="hover-underline-animation"
+              >PLAIDS PAR STYLE <i class="fa-thin fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="hover-underline-animation"
+              >PLAIDS COLORE <i class="fa-thin fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="hover-underline-animation"
+              >PLAIDS DISNEY <i class="fa-thin fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="hover-underline-animation"
+              >PLAIDS ANIMAUX <i class="fa-thin fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="hover-underline-animation"
+              >PLAIDS IMPRIME <i class="fa-thin fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="hover-underline-animation"
+              >PULE PLAIDS <i class="fa-thin fa-chevron-down"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-8">
+        <div>
+          <i class="bi bi-cart w-24 h-24"></i>
+        </div>
+        <div>
+          <input type="text" class="rounded-md" placeholder="Recherche" />
+        </div>
+      </div>
+    </nav>
+    <!-- End header -->
+    <!-- start hero -->
+    <section class="-mt-14">
+      <div
+        class="h-screen bg-indigo-50 prose max-w-none flex justify-center items-center px-20"
+      >
+        <div class="flex-1">
+          <h1>Offrez-vous le plaid dont vous avez besoin !</h1>
+          <h2>
+            Nous avons une grande variété de modèles de couleur et texture pour
+            s'adapter à tous les gouts et à tous les styles de décoration
+          </h2>
+          <a
+            href="#"
+            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none"
+          >
+            Decouvrir
+          </a>
+        </div>
+        <div class="flex-1 flex h-full">
+          <div class="h-full w-11/12 relative">
+            <img
+              src="assets/Group 1.png"
+              alt=""
+              class="mb-0 absolute bottom-0"
+            />
+          </div>
+          <div class="flex flex-col h-full justify-around items-center">
+            <div class="flex flex-col items-center gap-4">
+              <div class="uppercase font-extrabold">Couleur</div>
+              <div class="w-14 h-14 bg-[#173966] rounded-full"></div>
+              <div class="w-14 h-14 bg-[#747684] rounded-full"></div>
+            </div>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none"
+            >
+              Decouvrir
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class=""></div>
+    </section>
+    <!-- end hero -->
+    <!-- start collection section -->
+    <section>
+      <div
+        class="h-fit w-screen py-4 md:py-12 bg-white flex flex-col items-center justify-center prose max-w-none overflow-x-hidden"
+      >
+        <h1 class="text-5xl mb-4 md:mb-12">Nos Collection Univers Plaid</h1>
+        <div class="flex justify-center items-center gap-8">
+          <div
+            class="flex items-center h-44 cursor-pointer"
+            onclick="scrollCategories('l')"
+          >
+            <i class="fa-light fa-chevron-left fa-2x"></i>
+            <!-- <x-gmdi-arrow-back-ios-new-r class="h-10 w-10 opacity-100" /> -->
+          </div>
+          <div
+            id="categories"
+            class="categories flex gap-3 md:gap-11 overflow-x-auto p-5"
+          >
+            <div
+              class="collection-item collection-item-1 min-w-[320px] h-56 flex justify-center items-center font-bold text-xl rounded-2xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+            >
+              Pour vos interieurs
+            </div>
+            <div
+              class="collection-item collection-item-1 min-w-[320px] h-56 flex justify-center items-center font-bold text-xl rounded-2xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+            >
+              Pour vos interieurs
+            </div>
+            <div
+              class="collection-item collection-item-1 min-w-[320px] h-56 flex justify-center items-center font-bold text-xl rounded-2xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+            >
+              Pour vos interieurs
+            </div>
+            <div
+              class="collection-item collection-item-1 min-w-[320px] h-56 flex justify-center items-center font-bold text-xl rounded-2xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+            >
+              Pour vos interieurs
+            </div>
+            <div
+              class="collection-item collection-item-1 min-w-[320px] h-56 flex justify-center items-center font-bold text-xl rounded-2xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+            >
+              Pour vos interieurs
+            </div>
+            <div
+              class="collection-item collection-item-1 min-w-[320px] h-56 flex justify-center items-center font-bold text-xl rounded-2xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+            >
+              Pour vos interieurs
+            </div>
+            <div
+              class="collection-item collection-item-1 min-w-[320px] h-56 flex justify-center items-center font-bold text-xl rounded-2xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+            >
+              Pour vos interieurs
+            </div>
+          </div>
+          <div
+            class="flex items-center h-44 cursor-pointer"
+            onclick="scrollCategories('r')"
+          >
+            <i class="fa-light fa-chevron-right fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end collection section -->
+    <!-- start our-star section -->
+    <section class="mt-12 container mx-auto prose max-w-none">
+      <h1 class="text-5xl mb-4 md:mb-12 text-center">Nos vedettes</h1>
+      <div class="flex justify-center">
+        <div
+          class="grid grid-cols-2 justify-items-center gap-x-16 gap-y-10 w-fit"
+        >
+          <div
+            class="p-4 h- w-80 border-2 rounded-xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+          >
+            <div class="flex items-center mx-auto w-full h-64">
+              <img
+                class="object-cover w-full h-full m-0 rounded-lg"
+                src="assets/star/Quel-type-de-couverture-choisir-pour-l-hiver.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="mt-3 mb-0">Produit 1</h3>
+            <div class="flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <span class="font-extrabold"> 5/5</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold mx-1">80,99€-90,99€</span>
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
+                >
+                  <i
+                    class="fas fa-shopping-cart fa-1x"
+                    style="color: white"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 h-96 w-80 border-2 rounded-xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+          >
+            <div class="flex items-center mx-auto w-full h-64">
+              <img
+                class="object-cover w-full h-full m-0 rounded-lg"
+                src="assets/star/Quel-type-de-couverture-choisir-pour-l-hiver.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="mt-3 mb-0">Produit 1</h3>
+            <div class="flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <span class="font-extrabold"> 5/5</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold mx-1">80,99€-90,99€</span>
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
+                >
+                  <i
+                    class="fas fa-shopping-cart fa-1x"
+                    style="color: white"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 h-96 w-80 border-2 rounded-xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+          >
+            <div class="flex items-center mx-auto w-full h-64">
+              <img
+                class="object-cover w-full h-full m-0 rounded-lg"
+                src="assets/star/Quel-type-de-couverture-choisir-pour-l-hiver.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="mt-3 mb-0">Produit 1</h3>
+            <div class="flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <span class="font-extrabold"> 5/5</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold mx-1">80,99€-90,99€</span>
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
+                >
+                  <i
+                    class="fas fa-shopping-cart fa-1x"
+                    style="color: white"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 h-96 w-80 border-2 rounded-xl hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+          >
+            <div class="flex items-center mx-auto w-full h-64">
+              <img
+                class="object-cover w-full h-full m-0 rounded-lg"
+                src="assets/star/Quel-type-de-couverture-choisir-pour-l-hiver.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="mt-3 mb-0">Produit 1</h3>
+            <div class="flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <span class="font-extrabold"> 5/5</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold mx-1">80,99€-90,99€</span>
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
+                >
+                  <i
+                    class="fas fa-shopping-cart fa-1x"
+                    style="color: white"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end our-start-= section -->
+    <!--  -->
+    <section
+      class="pb-10 pt-8 sm:pb-28 sm:pt-24 container mx-auto prose max-w-none flex pl-4 flex-col md:flex-row items-start md:justify-between md:w-11/12 gap-4 md:gap-8"
+    >
+      <div class="flex items-center gap-5">
+        <div
+          class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
+        >
+          <i class="far fa-credit-card" style="color: white"></i>
+        </div>
+        <div class="">
+          <h4 class="m-0 font-bold text-d-green">Paiement Sécurisé</h4>
+          <h5 class="m-0 font-bold text-gray-400">Toutes cartes accéptées</h5>
+        </div>
+      </div>
+      <div class="flex items-center gap-5">
+        <div
+          class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
+        >
+          <i class="fas fa-shipping-fast" style="color: white"></i>
+        </div>
+        <div class="">
+          <h4 class="m-0 font-bold text-d-green">Livraison Rapide</h4>
+          <h5 class="m-0 font-bold text-gray-400">Recevez sous 72h</h5>
+        </div>
+      </div>
+      <div class="flex items-center gap-5">
+        <div
+          class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
+        >
+          <i class="far fa-check-circle" style="color: white"></i>
+        </div>
+        <div class="">
+          <h4 class="m-0 font-bold text-d-green">Qualité Garantie</h4>
+          <h5 class="m-0 font-bold text-gray-400">Un produit garantie</h5>
+        </div>
+      </div>
+      <div class="flex items-center gap-5">
+        <div>
+          <i class="fa-light fa-headset"></i>
+        </div>
+        <div class="">
+          <h4 class="m-0 font-bold text-d-green">Support Client</h4>
+          <h5 class="m-0 font-bold text-gray-400">Support mail 24h/24h</h5>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!-- start opinions section -->
+    <section
+      class="py-12 flex flex-col items-center prose max-w-none bg-blue-100"
+    >
+      <h1 class="text-5xl mb-4 md:mb-4">Ce que vous en pensez</h1>
+      <p class="mt-0 mb-4">Quelques temoignages de nos clients satisfait</p>
+      <div class="flex gap-8">
+        <div
+          class="flex flex-col items-center max-w-[384px] p-10 bg-white hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+        >
+          <img
+            src="https://xsgames.co/randomusers/avatar.php?g=male"
+            class="h-16 w-16 mt-0 rounded-full"
+          />
+          <div>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="my-4 text-2xl text-center font-extrabold">
+            J'adore mon plaid , il est trop doux
+          </p>
+          <p class="my-0">Gerard</p>
+        </div>
+        <div
+          class="flex flex-col items-center max-w-[384px] p-10 bg-white hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+        >
+          <img
+            src="https://xsgames.co/randomusers/avatar.php?g=male"
+            class="h-16 w-16 mt-0 rounded-full"
+          />
+          <div>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="my-4 text-2xl text-center font-extrabold">
+            J'adore mon plaid , il est trop doux
+          </p>
+          <p class="my-0">Gerard</p>
+        </div>
+        <div
+          class="flex flex-col items-center max-w-[384px] p-10 bg-white hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
+        >
+          <img
+            src="https://xsgames.co/randomusers/avatar.php?g=male"
+            class="h-16 w-16 mt-0 rounded-full"
+          />
+          <div>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="my-4 text-2xl text-center font-extrabold">
+            J'adore mon plaid , il est trop doux
+          </p>
+          <p class="my-0">Gerard</p>
+        </div>
+      </div>
+    </section>
+    <!-- end opinions section -->
+    <footer class="py-12 flex justify-around prose max-w-none bg-blue-900">
+      <div>
+        <a href="">
+          <img src="./assets/logo_blanc.svg" alt="" class="w-48 h-48" />
+        </a>
+      </div>
+      <div class="">
+        <div class="flex gap-32">
+          <div>
+            <h2 class="text-white mt-7">Liens utiles</h2>
+            <a href="#" class="font-extralight">Aide</a> <br />
+            <a href="#">Livraison</a> <br />
+            <a href="#">FAQs</a> <br />
+          </div>
+          <div>
+            <h2 class="text-white mt-7">A propos</h2>
+            <div>
+              <a href="#">Contactez-nous</a> <br />
+              <a href="#">CGU</a> <br />
+              <a href="#">Termes et conditions</a> <br />
+            </div>
+          </div>
+        </div>
+        <img src="assets/footer_paiement_bl.svg" alt="" class="ml-auto" />
+      </div>
+    </footer>
+    <script>
+      function scrollCategories(direction) {
+        var categoriesContainer = document.getElementById("categories");
+        categoriesContainer.scrollTo({
+          left:
+            (direction === "r"
+              ? categoriesContainer.scrollLeft
+              : categoriesContainer.scrollRight) + 700,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>

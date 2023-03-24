@@ -1,0 +1,20 @@
+.collection-item {
+}
+.collection-item-1 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("assets/bedroom-design-wallpaper-for-your-home.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.categories::-webkit-scrollbar,
+.opinions::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
