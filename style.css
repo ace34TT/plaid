@@ -10,6 +10,57 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.collection-item-2 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("assets/81r22zq1n2L._AC_SX466_.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection-item-3 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("assets/Couverture-couette-et-plaid-bebe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection-item-4 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("assets/51xZTy3uyfL._AC_SY580_.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection-item-5 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("assets/rose-snug-rug-deluxe-couverture-avec-manches-couve.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection-item-6 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("assets/71mtYie-aUL._AC_SX425_.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .categories::-webkit-scrollbar,
 .opinions::-webkit-scrollbar {
   display: none;
