@@ -597,12 +597,14 @@
               dont vous avez besoin !
             </h1>
             <h2>
-              Nous avons une grande variété de modèles de couleur et texture
-              pour s'adapter à tous les gouts et à tous les styles de décoration
+              Nous avons une grande variété de
+              <span class="font-bold">modèles</span> de couleur et texture pour
+              s'adapter à tous les <span class="font-bold">gouts</span> et à
+              tous les <span class="font-bold">styles</span> de décoration
             </h2>
             <a
               href="#"
-              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-[#173966] rounded-lg hover:bg-[#4172b1] focus:shadow-outline focus:outline-none"
+              class="no-underline inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-[#173966] rounded-lg hover:bg-[#4172b1] focus:shadow-outline focus:outline-none"
             >
               Découvrir
             </a>
@@ -616,6 +618,7 @@
                 src="assets/sweat-plaid-super-doux-gris_compressed-min.png"
                 alt=""
                 id="hero-img-1"
+                style="visibility: hidden"
                 class="mb-0 absolute bottom-0"
               />
               <img
@@ -641,7 +644,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-[#173966] rounded-lg hover:bg-[#3365a7] focus:shadow-outline focus:outline-none"
+                class="no-underline inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-[#173966] rounded-lg hover:bg-[#3365a7] focus:shadow-outline focus:outline-none"
               >
                 Découvrir
               </a>
@@ -1240,7 +1243,7 @@
     </section>
     <!-- end opinions section -->
     <footer
-      class="py-12 flex flex-col justify-center prose max-w-none bg-blue-900"
+      class="py-12 flex flex-col justify-center prose max-w-none bg-[#0A3969]"
     >
       <hr
         class="mx-auto my-12 w-6/12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"
@@ -1339,14 +1342,14 @@
       function handleHeroImg(imgIndex) {
         if (imgIndex === 1) {
           document.getElementById("color-1").classList.remove("active-color");
-          document.getElementById("hero-img-1").style.zIndex = 1;
+          document.getElementById("hero-img-1").style.visibility = "visible";
           document.getElementById("color-2").classList.add("active-color");
-          document.getElementById("hero-img-2").style.zIndex = 0;
+          document.getElementById("hero-img-2").style.visibility = "hidden";
         } else {
           document.getElementById("color-1").classList.add("active-color");
-          document.getElementById("hero-img-1").style.zIndex = 0;
+          document.getElementById("hero-img-1").style.visibility = "hidden";
           document.getElementById("color-2").classList.remove("active-color");
-          document.getElementById("hero-img-2").style.zIndex = 1;
+          document.getElementById("hero-img-2").style.visibility = "visible";
         }
       }
     </script>
