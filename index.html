@@ -26,6 +26,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- choose one -->
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -56,6 +60,12 @@
         width: 100%;
         overflow: hidden;
         line-height: 0;
+        z-index: 2;
+      }
+    </style>
+    <style>
+      .active-color {
+        border: solid black 3px;
       }
     </style>
     <title>Accueil - Plaid</title>
@@ -69,50 +79,102 @@
       <div>
         <ul class="capitalize flex gap-10 text-sm">
           <li>
-            <a href="" class="hover-underline-animation">
-              NOS PLAIDS <i class="fa-thin fa-chevron-down"></i
-            ></a>
+            <a href="" class="hover-underline-animation flex items-center">
+              NOS PLAIDS
+              <img
+                class="h-6 w-6"
+                src="assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+            </a>
           </li>
           <li>
-            <a href="" id="nav-item-2" class="hover-underline-animation"
-              >PLAIDS PAR STYLE <i class="fa-thin fa-chevron-down"></i
-            ></a>
+            <a
+              href=""
+              id="nav-item-2"
+              class="hover-underline-animation flex items-center"
+              >PLAIDS PAR STYLE
+              <img
+                class="h-6 w-6"
+                src="assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+            /></a>
           </li>
           <li>
-            <a href="" id="nav-item-3" class="hover-underline-animation"
-              >PLAIDS COLORE <i class="fa-thin fa-chevron-down"></i
-            ></a>
+            <a
+              href=""
+              id="nav-item-3"
+              class="hover-underline-animation flex items-center"
+              >PLAIDS COLORE
+              <img
+                class="h-6 w-6"
+                src="assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+            /></a>
           </li>
           <li>
-            <a href="" id="nav-item-4" class="hover-underline-animation"
-              >PLAIDS DISNEY <i class="fa-thin fa-chevron-down"></i
-            ></a>
+            <a
+              href=""
+              id="nav-item-4"
+              class="hover-underline-animation flex items-center"
+              >PLAIDS DISNEY
+              <img
+                class="h-6 w-6"
+                src="assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+            /></a>
           </li>
           <li>
-            <a href="" id="nav-item-5" class="hover-underline-animation"
-              >PLAIDS ANIMAUX <i class="fa-thin fa-chevron-down"></i
-            ></a>
+            <a
+              href=""
+              id="nav-item-5"
+              class="hover-underline-animation flex items-center"
+              >PLAIDS ANIMAUX
+              <img
+                class="h-6 w-6"
+                src="assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+            </a>
           </li>
           <li>
-            <a href="" id="nav-item-6" class="hover-underline-animation"
-              >PLAIDS IMPRIME <i class="fa-thin fa-chevron-down"></i
-            ></a>
+            <a
+              href=""
+              id="nav-item-6"
+              class="hover-underline-animation flex items-center"
+              >PLAIDS IMPRIME
+              <img
+                class="h-6 w-6"
+                src="assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+            /></a>
           </li>
           <li>
-            <a href="" id="nav-item-7" class="hover-underline-animation"
-              >PULE PLAIDS <i class="fa-thin fa-chevron-down"></i
-            ></a>
+            <a
+              href=""
+              id="nav-item-7"
+              class="hover-underline-animation flex items-center"
+              >PULE PLAIDS
+              <img
+                class="h-6 w-6"
+                src="assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+            /></a>
           </li>
         </ul>
       </div>
       <div class="flex items-center gap-16">
         <div class="relative">
           <div
-            class="absolute -top-4 -right-8 rounded-full bg-white w-6 h-6 flex items-center justify-center"
+            class="absolute -top-4 -right-6 rounded-full bg-white w-6 h-6 flex items-center justify-center"
           >
             0
           </div>
-          <i class="fa-light fa-cart-shopping fa-2xl"></i>
+          <img
+            src="assets//icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+            class="h-8 w-8"
+          />
         </div>
         <input type="text" class="rounded-lg h-8" placeholder="Recherche" />
       </div>
@@ -534,23 +596,37 @@
           class="h-screen bg-indigo-50 prose max-w-none flex justify-center items-center px-20"
         >
           <div class="flex-1">
-            <h1>Offrez-vous le plaid dont vous avez besoin !</h1>
+            <h1>
+              Offrez-vous le
+              <span class="text-[#173966]"> plaid réconfortant </span> <br />
+              dont vous avez besoin !
+            </h1>
             <h2>
               Nous avons une grande variété de modèles de couleur et texture
               pour s'adapter à tous les gouts et à tous les styles de décoration
             </h2>
             <a
               href="#"
-              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none"
+              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-[#173966] rounded-lg hover:bg-[#4172b1] focus:shadow-outline focus:outline-none"
             >
-              Decouvrir
+              Découvrir
             </a>
           </div>
           <div class="flex-1 flex h-full">
             <div class="h-full w-11/12 relative">
+              <div class="absolute inset-0 justify-center">
+                <!-- <div class="h-96 w-96 bg-yellow-50 rounded-full"></div> -->
+              </div>
               <img
-                src="assets/Group 1.png"
+                src="assets/sweat-plaid-super-doux-gris_compressed-min.png"
                 alt=""
+                id="hero-img-1"
+                class="mb-0 absolute bottom-0"
+              />
+              <img
+                src="assets/couverture-sweat-a-manches-bleu_compressed.png"
+                alt=""
+                id="hero-img-2"
                 class="mb-0 absolute bottom-0"
               />
             </div>
@@ -558,17 +634,21 @@
               <div class="flex flex-col items-center gap-4">
                 <div class="uppercase font-extrabold">Couleur</div>
                 <div
-                  class="w-14 h-14 bg-[#173966] cursor-pointer rounded-full"
+                  onclick="handleHeroImg(0)"
+                  id="color-1"
+                  class="w-14 h-14 bg-[#173966] cursor-pointer rounded-full active-color"
                 ></div>
                 <div
+                  onclick="handleHeroImg(1)"
+                  id="color-2"
                   class="w-14 h-14 bg-[#747684] cursor-pointer rounded-full"
                 ></div>
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none"
+                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-[#173966] rounded-lg hover:bg-[#3365a7] focus:shadow-outline focus:outline-none"
               >
-                Decouvrir
+                Découvrir
               </a>
             </div>
           </div>
@@ -601,7 +681,11 @@
             class="flex items-center h-44 cursor-pointer"
             onclick="scrollCategories('l')"
           >
-            <i class="fa-light fa-chevron-left fa-2x"></i>
+            <img
+              src="assets/icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+            <!-- <i class="fa-light fa-chevron-left fa-2x"></i> -->
             <!-- <x-gmdi-arrow-back-ios-new-r class="h-10 w-10 opacity-100" /> -->
           </div>
           <div
@@ -643,7 +727,10 @@
             class="flex items-center h-44 cursor-pointer"
             onclick="scrollCategories('r')"
           >
-            <i class="fa-light fa-chevron-right fa-2x"></i>
+            <img
+              src="assets/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -668,8 +755,18 @@
             </div>
             <h3 class="mt-3 mb-0">Plaid en fausse fourrure chocolat</h3>
             <div class="flex justify-between items-center">
-              <div>
-                <i class="fa-solid fa-star"></i>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 96 960 960"
+                  width="24"
+                  fill="#173966"
+                >
+                  <path
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                  />
+                </svg>
                 <span class="font-extrabold"> 5/5</span>
               </div>
               <div class="flex items-center gap-2">
@@ -677,10 +774,22 @@
                 <div
                   class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
                 >
-                  <i
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="48"
+                    viewBox="0 96 960 960"
+                    width="48"
+                    fill="#fff"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      d="M286.788 975Q257 975 236 953.788q-21-21.213-21-51Q215 873 236.212 852q21.213-21 51-21Q317 831 338 852.212q21 21.213 21 51Q359 933 337.788 954q-21.213 21-51 21Zm400 0Q657 975 636 953.788q-21-21.213-21-51Q615 873 636.212 852q21.213-21 51-21Q717 831 738 852.212q21 21.213 21 51Q759 933 737.788 954q-21.213 21-51 21ZM205 255h589.074q22.964 0 34.945 21Q841 297 829 318L694 561q-11 19-28.559 30.5Q647.881 603 627 603H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Z"
+                    />
+                  </svg>
+                  <!-- <i
                     class="fas fa-shopping-cart fa-1x"
                     style="color: white"
-                  ></i>
+                  ></i> -->
                 </div>
               </div>
             </div>
@@ -697,8 +806,18 @@
             </div>
             <h3 class="mt-3 mb-0">Plaid flanelle en matelassée bleu canard</h3>
             <div class="flex justify-between items-center">
-              <div>
-                <i class="fa-solid fa-star"></i>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 96 960 960"
+                  width="24"
+                  fill="#173966"
+                >
+                  <path
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                  />
+                </svg>
                 <span class="font-extrabold"> 5/5</span>
               </div>
               <div class="flex items-center gap-2">
@@ -706,10 +825,18 @@
                 <div
                   class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
                 >
-                  <i
-                    class="fas fa-shopping-cart fa-1x"
-                    style="color: white"
-                  ></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="48"
+                    viewBox="0 96 960 960"
+                    width="48"
+                    fill="#fff"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      d="M286.788 975Q257 975 236 953.788q-21-21.213-21-51Q215 873 236.212 852q21.213-21 51-21Q317 831 338 852.212q21 21.213 21 51Q359 933 337.788 954q-21.213 21-51 21Zm400 0Q657 975 636 953.788q-21-21.213-21-51Q615 873 636.212 852q21.213-21 51-21Q717 831 738 852.212q21 21.213 21 51Q759 933 737.788 954q-21.213 21-51 21ZM205 255h589.074q22.964 0 34.945 21Q841 297 829 318L694 561q-11 19-28.559 30.5Q647.881 603 627 603H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Z"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -726,8 +853,18 @@
             </div>
             <h3 class="mt-3 mb-0">Plaid grosse maille tricoté</h3>
             <div class="flex justify-between items-center">
-              <div>
-                <i class="fa-solid fa-star"></i>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 96 960 960"
+                  width="24"
+                  fill="#173966"
+                >
+                  <path
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                  />
+                </svg>
                 <span class="font-extrabold"> 5/5</span>
               </div>
               <div class="flex items-center gap-2">
@@ -735,10 +872,18 @@
                 <div
                   class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
                 >
-                  <i
-                    class="fas fa-shopping-cart fa-1x"
-                    style="color: white"
-                  ></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="48"
+                    viewBox="0 96 960 960"
+                    width="48"
+                    fill="#fff"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      d="M286.788 975Q257 975 236 953.788q-21-21.213-21-51Q215 873 236.212 852q21.213-21 51-21Q317 831 338 852.212q21 21.213 21 51Q359 933 337.788 954q-21.213 21-51 21Zm400 0Q657 975 636 953.788q-21-21.213-21-51Q615 873 636.212 852q21.213-21 51-21Q717 831 738 852.212q21 21.213 21 51Q759 933 737.788 954q-21.213 21-51 21ZM205 255h589.074q22.964 0 34.945 21Q841 297 829 318L694 561q-11 19-28.559 30.5Q647.881 603 627 603H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Z"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -755,8 +900,18 @@
             </div>
             <h3 class="mt-3 mb-0">Plaid en flanelle matelassée</h3>
             <div class="flex justify-between items-center">
-              <div>
-                <i class="fa-solid fa-star"></i>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 96 960 960"
+                  width="24"
+                  fill="#173966"
+                >
+                  <path
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                  />
+                </svg>
                 <span class="font-extrabold"> 5/5</span>
               </div>
               <div class="flex items-center gap-2">
@@ -764,10 +919,18 @@
                 <div
                   class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
                 >
-                  <i
-                    class="fas fa-shopping-cart fa-1x"
-                    style="color: white"
-                  ></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="48"
+                    viewBox="0 96 960 960"
+                    width="48"
+                    fill="#fff"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      d="M286.788 975Q257 975 236 953.788q-21-21.213-21-51Q215 873 236.212 852q21.213-21 51-21Q317 831 338 852.212q21 21.213 21 51Q359 933 337.788 954q-21.213 21-51 21Zm400 0Q657 975 636 953.788q-21-21.213-21-51Q615 873 636.212 852q21.213-21 51-21Q717 831 738 852.212q21 21.213 21 51Q759 933 737.788 954q-21.213 21-51 21ZM205 255h589.074q22.964 0 34.945 21Q841 297 829 318L694 561q-11 19-28.559 30.5Q647.881 603 627 603H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Z"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -784,7 +947,17 @@
         <div
           class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
         >
-          <i class="far fa-credit-card" style="color: white"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 96 960 960"
+            width="24"
+            fill="#fff"
+          >
+            <path
+              d="M880 316v520q0 24-18 42t-42 18H140q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42ZM140 425h680V316H140v109Zm0 129v282h680V554H140Zm0 282V316v520Z"
+            />
+          </svg>
         </div>
         <div class="">
           <h4 class="m-0 font-bold text-d-green">Paiement Sécurisé</h4>
@@ -795,7 +968,17 @@
         <div
           class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
         >
-          <i class="fas fa-shipping-fast" style="color: white"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 96 960 960"
+            width="24"
+            fill="#ffff"
+          >
+            <path
+              d="M224.118 895Q175 895 140.5 860.583 106 826.167 106 777H40V316q0-24 18-42t42-18h579v167h105l136 181v173h-71q0 49.167-34.382 83.583Q780.235 895 731.118 895 682 895 647.5 860.583 613 826.167 613 777H342q0 49-34.382 83.5-34.383 34.5-83.5 34.5ZM224 835q24 0 41-17t17-41q0-24-17-41t-41-17q-24 0-41 17t-17 41q0 24 17 41t41 17ZM100 717h22q17-27 43.041-43 26.041-16 58-16t58.459 16.5Q308 691 325 717h294V316H100v401Zm631 118q24 0 41-17t17-41q0-24-17-41t-41-17q-24 0-41 17t-17 41q0 24 17 41t41 17Zm-52-204h186L754 483h-75v148ZM360 527Z"
+            />
+          </svg>
         </div>
         <div class="">
           <h4 class="m-0 font-bold text-d-green">Livraison Rapide</h4>
@@ -806,7 +989,17 @@
         <div
           class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
         >
-          <i class="far fa-check-circle" style="color: white"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 96 960 960"
+            width="24"
+            fill="#fff"
+          >
+            <path
+              d="m421 758 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-83 31.5-156t86-127Q252 239 325 207.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 82-31.5 155T763 858.5q-54 54.5-127 86T480 976Zm0-60q142 0 241-99.5T820 576q0-142-99-241t-241-99q-141 0-240.5 99T140 576q0 141 99.5 240.5T480 916Zm0-340Z"
+            />
+          </svg>
         </div>
         <div class="">
           <h4 class="m-0 font-bold text-d-green">Qualité Garantie</h4>
@@ -817,7 +1010,17 @@
         <div
           class="w-10 h-10 flex items-center justify-center bg-[#173966] rounded-full"
         >
-          <i class="fa-solid fa-headset" style="color: white"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 96 960 960"
+            width="24"
+            fill="#fff"
+          >
+            <path
+              d="M440 936v-60h340V572q0-58-25-111.5T688 366q-42-41-96-65.5T480 276q-58 0-112 24.5T272 366q-42 41-67 94.5T180 572v244h-20q-33 0-56.5-23.5T80 736v-80q0-23 11-40.5t29-28.5l3-53q9-73 41.5-132t81-100q48.5-41 109-63.5T480 216q66 0 126.5 22.5t108.5 64q48 41.5 80.5 100T837 533l3 52q18 9 29 26.5t11 38.5v92q0 22-11 39t-29 26v69q0 24.75-17.625 42.375T780 936H440Zm-80-290q-12 0-21-9t-9-21.5q0-12.5 9-21t21.5-8.5q12.5 0 21 8.625T390 616q0 12-8.625 21T360 646Zm240 0q-12 0-21-9t-9-21.5q0-12.5 9-21t21.5-8.5q12.5 0 21 8.625T630 616q0 12-8.625 21T600 646Zm-359-52q-4-59 16.5-107t55-81.5Q347 372 392 354t90-18q91 0 153 57.5T711 537q-94-1-165.5-50.5T435 358q-16 81-67.5 143.5T241 594Z"
+            />
+          </svg>
         </div>
 
         <div class="">
@@ -841,12 +1044,62 @@
             src="https://xsgames.co/randomusers/avatar.php?g=male"
             class="h-16 w-16 mt-0 rounded-full"
           />
-          <div>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
           </div>
           <p class="my-4 text-2xl text-center font-extrabold">
             "J'adore mon plaid , il est trop doux"
@@ -860,12 +1113,62 @@
             src="https://xsgames.co/randomusers/avatar.php?g=female"
             class="h-16 w-16 mt-0 rounded-full"
           />
-          <div>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
           </div>
           <p class="my-4 text-2xl text-center font-extrabold">
             “Je le recommande à tous”
@@ -876,12 +1179,62 @@
           class="flex flex-col items-center max-w-[384px] p-10 bg-white hover:scale-105 transition ease-in-out shadow-sm cursor-pointer"
         >
           <img src="assets/46.jpg" class="h-16 w-16 mt-0 rounded-full" />
-          <div>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <i class="fa-sharp fa-solid fa-star"></i>
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+              fill="#173966"
+            >
+              <path
+                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+              />
+            </svg>
           </div>
           <p class="my-4 text-2xl text-center font-extrabold">
             “Il est super confortable, je ne le lâche plus”
@@ -891,34 +1244,55 @@
       </div>
     </section>
     <!-- end opinions section -->
-    <footer class="py-12 flex justify-around prose max-w-none bg-blue-900">
-      <div>
-        <a href="">
-          <img src="./assets/logo_blanc.svg" alt="" class="w-48 h-48" />
-        </a>
-      </div>
-      <div class="">
-        <div class="flex gap-32">
-          <div>
-            <h2 class="text-white mt-7">Liens utiles</h2>
-            <a href="#" class="text-white font-extralight">Aide</a> <br />
-            <a href="#" class="text-white font-extralight">Livraison</a> <br />
-            <a href="#" class="text-white font-extralight">FAQs</a> <br />
-          </div>
-          <div>
-            <h2 class="text-white mt-7">A propos</h2>
+    <footer
+      class="py-12 flex flex-col justify-center prose max-w-none bg-blue-900"
+    >
+      <hr
+        class="mx-auto my-12 w-6/12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"
+      />
+      <div class="flex justify-around w-full">
+        <div>
+          <a href="">
+            <img src="./assets/logo_blanc.svg" alt="" class="w-48 h-48" />
+          </a>
+        </div>
+        <div class="">
+          <div class="flex gap-32">
             <div>
-              <a href="#" class="text-white font-extralight">Contactez-nous</a>
+              <h2 class="text-white mt-7">Liens utiles</h2>
+              <a href="" class="text-white font-extralight no-underline"
+                >Aide</a
+              >
               <br />
-              <a href="#" class="text-white font-extralight">CGU</a> <br />
-              <a href="#" class="text-white font-extralight"
-                >Termes et conditions</a
+              <a href="#" class="text-white font-extralight no-underline"
+                >Livraison</a
+              >
+              <br />
+              <a href="#" class="text-white font-extralight no-underline"
+                >FAQs</a
               >
               <br />
             </div>
+            <div>
+              <h2 class="text-white mt-7">A propos</h2>
+              <div>
+                <a href="#" class="text-white font-extralight no-underline"
+                  >Contactez-nous</a
+                >
+                <br />
+                <a href="#" class="text-white font-extralight no-underline"
+                  >CGV</a
+                >
+                <br />
+                <a href="#" class="text-white font-extralight no-underline"
+                  >Termes et conditions</a
+                >
+                <br />
+              </div>
+            </div>
           </div>
+          <img src="assets/footer_paiement_bl.svg" alt="" class="ml-auto" />
         </div>
-        <img src="assets/footer_paiement_bl.svg" alt="" class="ml-auto" />
       </div>
     </footer>
     <!--  -->
@@ -964,6 +1338,21 @@
               activeElement = null;
             }
           });
+      }
+    </script>
+    <script>
+      function handleHeroImg(imgIndex) {
+        if (imgIndex === 1) {
+          document.getElementById("color-1").classList.remove("active-color");
+          document.getElementById("hero-img-1").style.zIndex = 1;
+          document.getElementById("color-2").classList.add("active-color");
+          document.getElementById("hero-img-2").style.zIndex = 0;
+        } else {
+          document.getElementById("color-1").classList.add("active-color");
+          document.getElementById("hero-img-1").style.zIndex = 0;
+          document.getElementById("color-2").classList.remove("active-color");
+          document.getElementById("hero-img-2").style.zIndex = 1;
+        }
       }
     </script>
   </body>
